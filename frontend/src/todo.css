@@ -1,0 +1,25 @@
+.todo-list{
+    margin-left: 10px;
+    cursor: pointer;
+    fill: red;
+}
+
+.todo-list path {
+    fill: red;
+}
+
+.mb {
+    margin-bottom: 5px;
+}
+
+.alignment-add {
+    margin-bottom: 5px;
+}
+
+.algn-child {
+    margin-left: 3px ;
+}
+
+.fnt-fmly {
+    font-family: initial;
+}
