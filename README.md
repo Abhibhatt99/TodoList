@@ -13,7 +13,7 @@ To get started with this project, follow the instructions below:
 2. Run the following command to start the Strapi backend:
 
 
-3. You will need login credentials to access the Admin Panel. Please refer to the provided documentation or configuration files for the login details.
+3. You will need to Register to access the Admin Panel.
 
 ### Frontend
 
