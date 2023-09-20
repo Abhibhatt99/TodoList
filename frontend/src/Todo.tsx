@@ -18,10 +18,10 @@ const Todo: React.FC = () => {
   const [errorMsg, setErrorMsg] = useState('');
 
 
-let token = "b1119a643bbe9f0ce81c0a4c505089d8ee537319301dd1d3c02d30160f5896d0beb323d475ae76e3f434d8912a8d0996874a644b183eeaa59d2725bed17b21c5bbc9ba666d193292411d6b15b5bbd96f686e46a1d4340dfcb30fcb0e121485e1e130bc452e0e2e8ea572a1757fb769327326021ae76ab1751fe55e2edc0464a2"
-
+let token = "b1f503c381542928a503962ee351e2d3cddfa4f61a2526b66b8c52d71094c3dd896facace365a01c48809d0b7a6b8c1fa900a81e048b3e562e2bd9e1fe0f9717da36a21b43b08ccdb9fd5cc55cbed6007386d5f7845f228d19d4cc7cf5a32fe31e8536f9401718f9d72ac4bac2835661da133b3d19073968bc90d01ccc512203"
+const apiUrl = 'http://localhost:1337/api/todos';
 const fetchTodos = () => {
-    axios.get('http://localhost:1337/api/todos', {
+    axios.get(apiUrl, {
       headers : {
         "Authorization" : `Bearer ${token}`
       }
@@ -63,7 +63,7 @@ const fetchTodos = () => {
 
   const handleDeleteTodo = (id: number) => {
     axios
-      .delete(`http://localhost:1337/api/todos/${id}`,{
+      .delete(`${apiUrl}/${id}`,{
         headers:{
           Authorization : `Bearer ${token}`
         }
